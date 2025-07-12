@@ -1,0 +1,340 @@
+{
+  "websites": {
+    "amazon": {
+      "name": "Amazon",
+      "domains": ["amazon.com", "amazon.in", "www.amazon.com", "www.amazon.in"],
+      "patterns": ["/dp/", "/product/", "/gp/product/"],
+      "category": "ecommerce",
+      "scraper": "amazon",
+      "enabled": true,
+      "priority": 1,
+      "description": "Amazon product pages",
+      "icon": "🛒"
+    },
+    "flipkart": {
+      "name": "Flipkart",
+      "domains": ["flipkart.com", "www.flipkart.com"],
+      "patterns": ["/p/", "/product/"],
+      "category": "ecommerce",
+      "scraper": "flipkart",
+      "enabled": true,
+      "priority": 1,
+      "description": "Flipkart product pages",
+      "icon": "🛒"
+    },
+    "myntra": {
+      "name": "Myntra",
+      "domains": ["myntra.com", "www.myntra.com"],
+      "patterns": ["/\\d+/buy"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Myntra fashion products",
+      "icon": "👕"
+    },
+    "meesho": {
+      "name": "Meesho",
+      "domains": ["meesho.com", "www.meesho.com"],
+      "patterns": ["/\\d+/buy"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Meesho fashion products",
+      "icon": "👕"
+    },
+    "snapdeal": {
+      "name": "Snapdeal",
+      "domains": ["snapdeal.com", "www.snapdeal.com"],
+      "patterns": ["/product/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Snapdeal product pages",
+      "icon": "🛒"
+    },
+    "ebay": {
+      "name": "eBay",
+      "domains": ["ebay.com", "www.ebay.com"],
+      "patterns": ["/itm/", "/p/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "eBay product listings",
+      "icon": "🛒"
+    },
+    "etsy": {
+      "name": "Etsy",
+      "domains": ["etsy.com", "www.etsy.com"],
+      "patterns": ["/listing/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Etsy handmade products",
+      "icon": "🎨"
+    },
+    "walmart": {
+      "name": "Walmart",
+      "domains": ["walmart.com", "www.walmart.com"],
+      "patterns": ["/ip/", "/product/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Walmart product pages",
+      "icon": "🛒"
+    },
+    "target": {
+      "name": "Target",
+      "domains": ["target.com", "www.target.com"],
+      "patterns": ["/p/", "/product/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Target product pages",
+      "icon": "🎯"
+    },
+    "bestbuy": {
+      "name": "Best Buy",
+      "domains": ["bestbuy.com", "www.bestbuy.com"],
+      "patterns": ["/site/", "/product/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Best Buy electronics",
+      "icon": "📱"
+    },
+    "shopify": {
+      "name": "Shopify Stores",
+      "domains": ["myshopify.com", "shopify.com"],
+      "patterns": ["/products/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 3,
+      "description": "Shopify-powered stores",
+      "icon": "🛍️"
+    },
+    "wordpress_ecommerce": {
+      "name": "WordPress E-commerce",
+      "domains": ["*"],
+      "patterns": ["/product/", "/shop/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 3,
+      "description": "WordPress WooCommerce stores",
+      "icon": "🛍️"
+    },
+    "magento": {
+      "name": "Magento Stores",
+      "domains": ["*"],
+      "patterns": ["/catalog/product/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 3,
+      "description": "Magento-powered stores",
+      "icon": "🛍️"
+    },
+    "yelp": {
+      "name": "Yelp",
+      "domains": ["yelp.com", "www.yelp.com"],
+      "patterns": ["/biz/"],
+      "category": "reviews",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Yelp business reviews",
+      "icon": "⭐"
+    },
+    "tripadvisor": {
+      "name": "TripAdvisor",
+      "domains": ["tripadvisor.com", "www.tripadvisor.com"],
+      "patterns": ["/Restaurant_Review", "/Hotel_Review"],
+      "category": "reviews",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "TripAdvisor travel reviews",
+      "icon": "✈️"
+    },
+    "zomato": {
+      "name": "Zomato",
+      "domains": ["zomato.com", "www.zomato.com"],
+      "patterns": ["/restaurant/"],
+      "category": "reviews",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Zomato restaurant reviews",
+      "icon": "🍽️"
+    },
+    "trustpilot": {
+      "name": "Trustpilot",
+      "domains": ["trustpilot.com", "www.trustpilot.com"],
+      "patterns": ["/review/"],
+      "category": "reviews",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Trustpilot business reviews",
+      "icon": "⭐"
+    },
+    "glassdoor": {
+      "name": "Glassdoor",
+      "domains": ["glassdoor.com", "www.glassdoor.com"],
+      "patterns": ["/Reviews/", "/Overview/"],
+      "category": "reviews",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Glassdoor company reviews",
+      "icon": "💼"
+    },
+    "makemytrip": {
+      "name": "MakeMyTrip",
+      "domains": ["makemytrip.com", "www.makemytrip.com"],
+      "patterns": ["/hotel/", "/flight/"],
+      "category": "travel",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "MakeMyTrip travel bookings",
+      "icon": "✈️"
+    },
+    "goibibo": {
+      "name": "Goibibo",
+      "domains": ["goibibo.com", "www.goibibo.com"],
+      "patterns": ["/hotel/", "/flight/"],
+      "category": "travel",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Goibibo travel bookings",
+      "icon": "✈️"
+    },
+    "cleartrip": {
+      "name": "Cleartrip",
+      "domains": ["cleartrip.com", "www.cleartrip.com"],
+      "patterns": ["/hotel/", "/flight/"],
+      "category": "travel",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "Cleartrip travel bookings",
+      "icon": "✈️"
+    },
+    "redbus": {
+      "name": "RedBus",
+      "domains": ["redbus.in", "www.redbus.in"],
+      "patterns": ["/bus/"],
+      "category": "travel",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "RedBus bus bookings",
+      "icon": "🚌"
+    },
+    "irctc": {
+      "name": "IRCTC",
+      "domains": ["irctc.co.in", "www.irctc.co.in"],
+      "patterns": ["/train/"],
+      "category": "travel",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 2,
+      "description": "IRCTC train bookings",
+      "icon": "🚂"
+    },
+    "generic_ecommerce": {
+      "name": "Generic E-commerce",
+      "domains": ["*"],
+      "patterns": ["/product/", "/item/", "/shop/"],
+      "category": "ecommerce",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 4,
+      "description": "Generic e-commerce sites",
+      "icon": "🛒"
+    },
+    "generic_website": {
+      "name": "Generic Website",
+      "domains": ["*"],
+      "patterns": ["*"],
+      "category": "generic",
+      "scraper": "universal",
+      "enabled": true,
+      "priority": 5,
+      "description": "Any website with reviews",
+      "icon": "🌐"
+    }
+  },
+  "blocked_domains": [
+    "facebook.com",
+    "twitter.com",
+    "instagram.com",
+    "linkedin.com",
+    "youtube.com",
+    "tiktok.com",
+    "snapchat.com",
+    "pinterest.com",
+    "reddit.com",
+    "discord.com",
+    "telegram.org",
+    "whatsapp.com"
+  ],
+  "categories": {
+    "ecommerce": {
+      "name": "E-commerce",
+      "description": "Online shopping platforms",
+      "icon": "🛒"
+    },
+    "reviews": {
+      "name": "Review Sites",
+      "description": "Review and rating platforms",
+      "icon": "⭐"
+    },
+    "travel": {
+      "name": "Travel",
+      "description": "Travel booking platforms",
+      "icon": "✈️"
+    },
+    "generic": {
+      "name": "Generic",
+      "description": "Other websites",
+      "icon": "🌐"
+    }
+  },
+  "scrapers": {
+    "amazon": {
+      "name": "Amazon Scraper",
+      "description": "Specialized scraper for Amazon",
+      "enabled": true
+    },
+    "flipkart": {
+      "name": "Flipkart Scraper",
+      "description": "Specialized scraper for Flipkart",
+      "enabled": true
+    },
+    "universal": {
+      "name": "Universal Scraper",
+      "description": "Generic scraper for most websites",
+      "enabled": true
+    }
+  },
+  "settings": {
+    "default_timeout": 15,
+    "max_retries": 3,
+    "rate_limit_delay": 2,
+    "user_agents_enabled": true,
+    "selenium_fallback": true,
+    "accessibility_check": true
+  }
+} 

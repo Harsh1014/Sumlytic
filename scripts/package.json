@@ -1,0 +1,16 @@
+{
+  "name": "review-summarizer-backend",
+  "version": "1.0.0",
+  "description": "Backend for Review Summarizer System",
+  "scripts": {
+    "start": "python backend/app.py",
+    "setup": "python database_setup.py",
+    "dev": "flask run --debug",
+    "test": "python -m pytest tests/"
+  },
+  "dependencies": {
+    "flask": "^2.3.3",
+    "flask-cors": "^4.0.0",
+    "flask-sqlalchemy": "^3.0.5"
+  }
+}
